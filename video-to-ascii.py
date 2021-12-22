@@ -22,7 +22,7 @@ except:
 vidcap = cv2.VideoCapture(cmd)
 success, image = vidcap.read()
 dele, number, count = 1, 1, 1
-os.system(f"mode con cols= {str(columns)} lines= {str(lines)}")
+os.system("mode con cols="+str(columns)+" lines="+str(lines))
 scale = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1[]?-_+~<>i!lI;:, ")
 if rev:
     scale.reverse()
